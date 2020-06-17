@@ -186,44 +186,57 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 
                 <!-- Image -->
 				<div class="single-inner">
-                    <div class="big-image">
+                    <!-- <div class="big-image">
                         <img src="<?php
+						// if (!empty($arResult['DETAIL_PICTURE']['SRC'])) {
+						// 	echo $arResult['DETAIL_PICTURE']['SRC'];
+						// } else {
+						// 	echo "/images/nonimage.jpg";
+						// }
+						?>" alt="<?=$name?>">
+
+                        <a href="<?=$arResult['DETAIL_PICTURE']['SRC']?>" class="big-image-popup">
+						
+						</a>
+                    </div> -->
+
+					<div class="sliderProduct__inCatalog popup-gallery">
+					
+					<a href="<?=$arResult['DETAIL_PICTURE']['SRC']?>">
+						<img src="<?php
 						if (!empty($arResult['DETAIL_PICTURE']['SRC'])) {
 							echo $arResult['DETAIL_PICTURE']['SRC'];
 						} else {
 							echo "/images/nonimage.jpg";
 						}
 						?>" alt="<?=$name?>">
-                        <a href="<?=$arResult['DETAIL_PICTURE']['SRC']?>" class="big-image-popup"></a>
-                    </div>
-                </div>
+					</a>
 
 
-				<!-- .. -->
-				<div class="slider"  style="display: none;">
-
-<img src="<?php
-	if (!empty($arResult['DETAIL_PICTURE']['SRC'])) {
-		echo $arResult['DETAIL_PICTURE']['SRC'];
-	} else {
-		echo "/images/nonimage.jpg";
-	}
-	?>" alt="<?=$name?>">
 
 <?
 $LINE_ELEMENT_COUNT = 2; // number of elements in a row
 if(count($arResult["MORE_PHOTO"])>0):?>
 <?foreach($arResult["MORE_PHOTO"] as $PHOTO):?>
-<? $file = CFile::ResizeImageGet($PHOTO, array('width'=>150, 'height'=>'112'), BX_RESIZE_IMAGE_EXACT, true); ?>
-<div class="more_photo">
-<a href="<?=$PHOTO["SRC"]?>" name="more_photo">
-<img border="0" src="<?=$file["src"]?>" width="<?=$file["width"]?>" height="<?=$file["height"]?>"
-alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>" />
-</a>
-</div>
+<? $file = CFile::ResizeImageGet($PHOTO, array('width'=>1000, 'height'=>'1000'), BX_RESIZE_IMAGE_EXACT, true); ?>
+	
+	<a href="<?=$PHOTO["SRC"]?>" name="more_photo">
+		<img border="0" src="<?=$file["src"]?>" width="<?=$file["width"]?>" height="<?=$file["height"]?>" alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>" />
+	</a>
+
 <?endforeach?>
 <?endif?>  
 </div>
+
+
+
+
+
+                </div>
+
+
+				<!-- .. -->
+
 				<!-- // -->
 
 
@@ -406,7 +419,14 @@ echo('<p class="non-availabe">Данный товар отсутствует н�
 						<?endforeach;?>
 						</ul>
                         </div>
+
+
+
+
+
                     </div>
+
+
 
 
          
