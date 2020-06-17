@@ -916,7 +916,9 @@ if (browserok) {
 
 /* ---------------------------------- Slider in --> catalog --> product ---------------------------------- */
 
-let productSliderInCatalog = $('.sliderProduct__inCatalog').slick({
+
+let productSliderInCatalog = $('.sliderProduct__inCatalog');
+productSliderInCatalog.slick({
     arrows: true,
     autoplay: false,
     dots: false,
