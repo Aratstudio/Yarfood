@@ -913,3 +913,19 @@ if (browserok) {
 
 
 */
+
+/* ---------------------------------- Slider in --> catalog --> product ---------------------------------- */
+
+let productSliderInCatalog = $('.sliderProduct__inCatalog').slick({
+    arrows: true,
+    autoplay: false,
+    dots: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    fade: true,
+    infinite: false,
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-long-arrow-right"></i></button>',
+});
+
