@@ -1,0 +1,117 @@
+
+/* Стили для формы */
+.form_box {
+	width: 300px;
+	margin: 40px auto;
+}
+
+.form_style p {
+  margin-bottom: 15px;
+  position: relative;
+}
+.form_style .rcheck {
+  margin-bottom: 10px;
+}
+.form_style p label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+  cursor: pointer;
+  font-weight: 800;
+}
+.form_style .rcheck label {
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+	display: inline;
+  vertical-align: top;
+}
+.form_style input[type="text"] {
+	display: block;
+	border: 1px solid #000000;
+	font-size: 16px;
+	color: #000000;
+	padding: 7px 7px 8px;
+	width: 100%;
+}
+.form_style input[type="tel"] {
+	display: block;
+	border: 1px solid #000000;
+	font-size: 16px;
+	color: #000000;
+	padding: 7px 7px 8px;
+	width: 100%;
+}
+.form_style textarea {
+	display: block;
+	border: 1px solid #000000;
+	font-size: 16px;
+	color: #000000;
+	padding: 7px 7px 8px;
+	width: 100%;
+}
+.form_style input[type="checkbox"] {
+	display: inline-block;
+  border: 1px solid #000000;
+  width: 14px;
+  margin: 4px 4px 0 0;
+  vertical-align: top;
+}
+.form_style input:focus {
+	outline: none;
+	border-color: #07a6e6;
+}
+.form_style .btnsubmit {
+/*
+	border: none;
+	width: 180px;
+	text-align: center;
+	background: #07a6e6;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	cursor: pointer;
+	height: 35px;
+	line-height: 28px;
+	padding: 0;
+*/
+}
+.form_style input.rf_error {
+  border-color: #d8512d;
+}
+.form_style .rfield_error {
+  display: block;
+  padding: 0px 10px;
+  background-color: #d8512d;
+  color: #fff;
+  font-size: 12px;
+  z-index: 1;
+  position: absolute;
+  top: 36px;
+  left: auto;
+  right: 0px;
+  visibility: hidden;
+}
+.form_style .rcheck .rfield_error {
+  top: 0px;
+  left: 22px;
+  right: auto;
+}
+/*
+.form_style .btnsubmit:hover {
+	background: #009ac2;
+}
+.form_style .btnsubmit:active {
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
+  outline: none;
+}
+*/
+.form_style .btnsubmit:focus {
+  outline: none;
+}
+.form_style .btnsubmit.disabled,
+.form_style .btnsubmit.disabled:hover {
+/* 	background: #afdde6; */
+	cursor: default;
+}
