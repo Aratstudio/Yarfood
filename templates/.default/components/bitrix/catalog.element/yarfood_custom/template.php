@@ -232,6 +232,8 @@ if(count($arResult["MORE_PHOTO"])>0):?>
 
 
 
+
+
                 </div>
 
 
@@ -391,6 +393,10 @@ echo('<p class="non-availabe">Данный товар отсутствует н�
 							}?>
 
 <? if($prop['NAME']==="Заметка"){
+                                    unset($prop['NAME']);unset($prop['VALUE']);
+
+							}?>
+<? if($prop['NAME']==="Картинки"){
                                     unset($prop['NAME']);unset($prop['VALUE']);
 
 							}?>

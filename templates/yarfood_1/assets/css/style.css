@@ -168,7 +168,7 @@ p.rline{
     border: 1px solid #dddddd;
 }
 
-/* Клиенты */
+/* ÐšÐ»Ð¸ÐµÐ½Ñ‚Ñ‹ */
 
 .banner-bg {
     background-image: url(/local/templates/yarfood/assets/images/client-bg2.png);
@@ -2893,7 +2893,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
+
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .row-20>[class*="col"], .row-20>[class*="col-"] {
@@ -10459,7 +10462,7 @@ img.mfp-img {
     display: block;
 }
 
-/* Настройка верхнего меню */
+/* ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð²ÐµÑ€Ñ…Ð½ÐµÐ³Ð¾ Ð¼ÐµÐ½ÑŽ */
 
 .menu-line-search {
     position: absolute;
@@ -16495,7 +16498,7 @@ img.logo-xs {
 }
 
 /*---------------------------------------
-    №. Team Slider
+    â„–. Team Slider
 -----------------------------------------*/
 
 .team-slider {
@@ -16564,6 +16567,12 @@ img.logo-xs {
     color: #fff;
     cursor: zoom-in;
 }
+
+.sliderProduct__inCatalog:hover .position-right, .sliderProduct__inCatalog:hover .position-left{
+    opacity: 1;
+}
+
+ 
 
 .aside-search {
     padding: 15px 25px;
@@ -17108,7 +17117,7 @@ img.logo-xs {
 }
 
 /*---------------------------------------
-    №. Certificates
+    â„–. Certificates
 -----------------------------------------*/
 
 .certificate-item {
@@ -17720,7 +17729,7 @@ ul.link-widget li a:hover {
     display: block;
 }
 
-/* Обратный звонок в подвале сайта */
+/* ÐžÐ±Ñ€Ð°Ñ‚Ð½Ñ‹Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº Ð² Ð¿Ð¾Ð´Ð²Ð°Ð»Ðµ ÑÐ°Ð¹Ñ‚Ð° */
 
 .modal-header .close {
     padding: 15px;
@@ -20291,7 +20300,7 @@ p.non-availabe {
 .hero-slider.hero-slider-two .slick-slide a{
 	width: 100%;
 }
-/* Стили для сравнения товара */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð° */
 
 .bx_compare .bx_filtren_container {
     padding: 2.6%;
@@ -20324,7 +20333,7 @@ p.non-availabe {
     font-weight: 300;
 }
 
-/* Стили для фильтра */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð° */
 
 .bx_filter .bx_filter_section {
     position: relative;
@@ -20440,7 +20449,7 @@ p.non-availabe {
     height: auto! Important;
 }
 
-/* Корзина */
+/* ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð° */
 
 .bx-soa-cart-t {
     float: left;
@@ -20563,6 +20572,8 @@ p.non-availabe {
 .slick-slide img {
 	width: 100%;
 	height: auto;
+	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
 }
 
 .header-sticky1.main-head1{
@@ -20847,3 +20858,45 @@ p.non-availabe {
 	height: auto;
 }
 
+.position-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 8;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #959595;
+    color: #202020;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0;
+    opacity: 0;
+}
+
+.position-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 8;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #959595;
+    color: #202020;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0;
+    opacity: 0;
+}
+
+
+@media only screen and (max-width: 991px){
+    .position-left, .position-right{
+        opacity: 1;
+    }
+    .position-right{
+        right: 15px;
+    }
+    .position-left{
+        left: 15px;
+    }
+}

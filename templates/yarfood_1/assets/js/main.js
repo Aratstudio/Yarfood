@@ -627,10 +627,7 @@ galleryPopup.magnificPopup({
 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
 		},
 		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
+		
 		}
 	});
 
@@ -945,9 +942,10 @@ productSliderInCatalog.slick({
     pauseOnFocus: false,
     pauseOnHover: false,
     fade: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
-    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-long-arrow-right"></i></button>',
+    prevArrow: '<button type="button" class="slick-prev position-left"><i class="icofont icofont-long-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next position-right"><i class="icofont icofont-long-arrow-right"></i></button>',
 });
+
 
